@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/auto-cert-ssl-renew",
+    "description": "Infrastructure utility verifying DNS validation records and renewing active Let's Encrypt SSL certificates automatically.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\CertAuto\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\CertAuto\\PackageServiceProvider"
+            ]
+        }
+    }
+}
